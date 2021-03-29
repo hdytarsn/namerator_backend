@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\GameController;
+use App\Models\GameRoom;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -25,3 +27,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //Authentication Routes
 Route::post('login', [AuthController::class,'login']);
 Route::post('register', [AuthController::class,'register']);
+
+//GameRoom Routes
+Route::post('room/create', [GameRoom::class,'create']);
+
+//Game Routes
+Route::post('game/config/create', [GameController::class,'createConfig']);
+Route::get('game/config/get/{id}', [GameController::class,'getConfig']);
+
+Route::post('game/action/create', [GameController::class,'createAction']);

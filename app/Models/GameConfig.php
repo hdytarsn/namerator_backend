@@ -19,7 +19,7 @@ class GameConfig extends Model
         $config= [
             'levelId'=>$this->level,
             'languageId'=>$this->speech_lang,
-            'multiplayer'=>$this->game_type===2?true:false,
+            'isMultiplayer'=>$this->game_type===2?true:false,
             'isGameStarted'=>$this->room->is_game_started?true:false
         ];
         return $config;

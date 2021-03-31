@@ -51,10 +51,9 @@ class GameRoomController extends Controller
     public function getConfig($slug)
     {
         $room = GameRoom::query()->where(['slug' => $slug])->firstOrFail();
+        $mergedConfig = array_merge($room->specialites(), $room->config->specialites());
         return response()->json([
-            'config' => $room->config->specialites(),
-            'room' => $room->specialites(), 200
-        ]);
+            'config' => $mergedConfig
+        ], 200);
     }
-
 }

@@ -15,3 +15,16 @@ function slugify($string, $separator = '-')
 
     return Str::slug($string, $separator);
 }
+function toLowerCase($string)
+{
+
+    $string = str_replace('Ç', 'c', $string);
+    $string = str_replace('Ğ', 'g', $string);
+    $string = str_replace('I', 'i', $string);
+    $string = str_replace('İ', 'i', $string);
+    $string = str_replace('Ö', 'o', $string);
+    $string = str_replace('Ş', 's', $string);
+    $string = str_replace('Ü', 'u', $string);
+    $string = strtolower($string);
+    return $string;
+}

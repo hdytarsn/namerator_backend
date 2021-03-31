@@ -2,10 +2,10 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\GameController;
-use App\Models\GameRoom;
+use App\Http\Controllers\Api\GameRoomController;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Broadcast::routes(['middleware' => ['auth:sanctum']]);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -29,10 +29,9 @@ Route::post('login', [AuthController::class,'login']);
 Route::post('register', [AuthController::class,'register']);
 
 //GameRoom Routes
-Route::post('room/create', [GameRoom::class,'create']);
+Route::post('room/create', [GameRoomController::class,'createRoom']);
+Route::get('room/config/{slug}', [GameRoomController::class,'getConfig']);
 
 //Game Routes
-Route::post('game/config/create', [GameController::class,'createConfig']);
-Route::get('game/config/get/{id}', [GameController::class,'getConfig']);
-
 Route::post('game/action/create', [GameController::class,'createAction']);
+Route::post('game/start', [GameController::class,'startGame'])->middleware('auth:sanctum');

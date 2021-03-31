@@ -20,7 +20,9 @@ class CreateGameRoomsTable extends Migration
             $table->foreign('created_by')
                 ->references('id')
                 ->on('users');
-            $table->tinyInteger('is_online');
+            $table->tinyInteger('is_online')->default(1);
+            $table->tinyInteger('is_game_started')->default(0);
+            $table->text('used_names');
             $table->timestamps();
         });
     }

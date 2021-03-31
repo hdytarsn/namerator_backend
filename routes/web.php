@@ -1,6 +1,9 @@
 <?php
 
 use App\Events\Test;
+use App\Models\EngName;
+use App\Models\GameRoom;
+use App\Models\TrName;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,5 +18,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/test-broadcast', function () {
-    broadcast(new Test());
+    broadcast(new Test('nxWhAj'));
 });
+Route::get('/test', function () {
+    $r=substr(toLowerCase('tayyip'), -1)==substr(toLowerCase('Pınar'), 0,1)?true : false;
+dd($r);
+});
+
+
+

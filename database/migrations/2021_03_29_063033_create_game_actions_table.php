@@ -23,9 +23,9 @@ class CreateGameActionsTable extends Migration
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users');
-                $table->string('entry_name')->nullable();
+                $table->string('entry_name',255)->nullable();
 
-            $table->tinyInteger('status')->comment('1>success - 2>used - 3>fail');
+            $table->string('status',60)->comment('1>success - 2>used - 3>fail');
             $table->integer('point');
             $table->timestamps();
         });

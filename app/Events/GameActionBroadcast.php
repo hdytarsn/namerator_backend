@@ -10,9 +10,13 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class Test implements ShouldBroadcast
+class GameActionBroadcast implements ShouldBroadcast
 {
     protected $gameRoom;
+    protected $user;
+    protected $entryName;
+    protected $status;
+    protected $point;
 
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
@@ -21,15 +25,19 @@ class Test implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct( $gameRoom)
+    public function __construct($user, $gameRoom, $entryName, $point, $status)
     {
-        
+        $this->user = $user;
         $this->gameRoom = $gameRoom;
+        $this->entryName = $entryName;
+        $this->status = $status;
+        $this->point = $point;
     }
 
-    public function broadcastWith(){
+    public function broadcastWith()
+    {
         return [
-            'IsGameStarted'=>true
+            'action_result' => ['user_id' => $this->user->id, 'name' => $this->entryName, 'status' => $this->status, 'point' => $this->point]
         ];
     }
 
@@ -40,6 +48,6 @@ class Test implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PresenceChannel('game.room.'.$this->gameRoom);
+        return new PresenceChannel('game.room.' . $this->gameRoom);
     }
 }

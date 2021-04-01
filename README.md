@@ -8,15 +8,15 @@
 <br />
 <p align="center">
   <a href="https://github.com/hdytarsn/namerator_backend">
-    <img src="http://game.namerator.fun/img/logo/logo-bk.png" alt="Logo" width="350">
+    <img src="https://game.namerator.fun/img/logo/logo-bk.png" alt="Logo" width="350">
   </a>
   <p align="center">
 Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascript bootcamp. 🎓
     <br />
     <br />
-    <a href="http://game.namerator.fun/">View Demo</a>
+    <a href="https://game.namerator.fun/">View Demo</a>
       <br>
-        <p align="center">(You probably cant play on demo because the SSL-Microphone Issues, you can play locally)</p>
+        <p align="center">(You can play locally & on demo)</p>
   </p>
 </p>
 

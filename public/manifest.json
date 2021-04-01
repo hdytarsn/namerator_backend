@@ -1,0 +1,11 @@
+{"short_name": "Namerator",
+"name": "Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascript bootcamp.",
+"icons": [
+{
+"src": "/public/img/brand/white.png",
+"type": "image/png",
+"sizes": "100X30"
+}
+],
+"start_url": "/public"
+}

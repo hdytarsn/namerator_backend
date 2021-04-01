@@ -22,7 +22,7 @@ class CreateGameRoomsTable extends Migration
                 ->on('users');
             $table->tinyInteger('is_online')->default(1);
             $table->tinyInteger('is_game_started')->default(0);
-            $table->text('used_names');
+            $table->text('used_names')->nullable();
             $table->timestamps();
         });
     }

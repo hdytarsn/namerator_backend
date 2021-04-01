@@ -20,10 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/test-broadcast', function () {
     broadcast(new Test('nxWhAj'));
 });
-Route::get('/test', function () {
-    $r=substr(toLowerCase('tayyip'), -1)==substr(toLowerCase('Pınar'), 0,1)?true : false;
-dd($r);
-});
+
+Route::view('/', 'frontBuild');
+
 
 
 

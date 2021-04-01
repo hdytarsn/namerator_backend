@@ -35,7 +35,7 @@ Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascri
 ## Notes
 
 This backend project created only api requests and web socket channel connections.
-Demo project deployed on http://namerator.fun you can get responses from your locak project, http://namerator.fun/api routes (This is set defaul base url for [Nameretor Frontend](https://github.com/hdytarsn/namerator_frontend)).
+Demo project deployed on http://namerator.fun you can get responses from your local project, http://namerator.fun/api routes (This is set defaul base url for [Nameretor Frontend](https://github.com/hdytarsn/namerator_frontend)).
 
 
 ## Built With

@@ -11,7 +11,7 @@
     <img src="http://game.namerator.fun/img/logo/logo-bk.png" alt="Logo" width="350">
   </a>
   <p align="center">
-Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascript bootcamp.
+Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascript bootcamp. 🎓
     <br />
     <br />
     <a href="http://game.namerator.fun/">View Demo</a>
@@ -27,6 +27,7 @@ Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascri
     <li><a href="#notes">Notes</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#installation">Installation</a></li>
+    <li><a href="#thanks">Thanks</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -80,15 +81,25 @@ Demo project deployed on http://namerator.fun you can get responses from your lo
     PUSHER_APP_CLUSTER=eu
     -And Set BROADCAST_DRIVER=pusher
    ```
+   Atolye15 Project Keys&Ids Below (these will remove soon,added only for Alpcan Aydın)
+   
+   ```sh
+   PUSHER_APP_ID=1179053
+    PUSHER_APP_KEY=8cf0e37a457627fb2630
+    PUSHER_APP_SECRET=0a146bb1a8f2b0fa36da
+    PUSHER_APP_CLUSTER=eu
+   ```
+   Pusher Email: atolye15@namerator.fun
+   Pusher Passwd: JS4Atolye15
+
 7. Migrate the database
     ```sh
    php artisan migrate
    ```
 
-
-## Contact
-
-Hidayet Arasan - [Web Site](https://hidayetarasan.com) - info@hidayetarasan.com
-
 ## Thanks!
 Special thanks to [Atölye15](https://www.atolye15.com) and [Kodluyoruz](https://www.kodluyoruz.org) 
+
+## Contact
+Hidayet Arasan - [Web Site](https://hidayetarasan.com) - info@hidayetarasan.com
+

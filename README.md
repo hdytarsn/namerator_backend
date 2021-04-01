@@ -16,7 +16,7 @@ Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascri
     <br />
     <a href="http://game.namerator.fun/">View Demo</a>
       <br>
-        <p align="center">(You probably cant play because the SSL-Microphone Issues, you can play with local)</p>
+        <p align="center">(You probably cant play on demo because the SSL-Microphone Issues, you can play locally)</p>
   </p>
 </p>
 

@@ -21,7 +21,6 @@ Route::get('/test-broadcast', function () {
     broadcast(new Test('nxWhAj'));
 });
 
-Route::view('/', 'frontBuild');
 
 
 

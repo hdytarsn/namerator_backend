@@ -10,13 +10,13 @@
   <a href="https://github.com/hdytarsn/namerator_backend">
     <img src="https://game.namerator.fun/img/logo/logo-bk.png" alt="Logo" width="350">
   </a>
-  <p align="center">
-Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascript bootcamp. 🎓
+<p align="center"><b>(In Development)</b><p>
+      
+<p align="center">"Namerator" is a simple name finding game that you can play multiplayer or single player.<br>
+It's a weekend project to develop myself in different technologies <a href="#built-with">see below</a>.
     <br />
     <br />
     <a href="https://game.namerator.fun/">View Demo</a>
-      <br>
-        <p align="center">(You can play locally & on demo)</p>
   </p>
 </p>
 
@@ -27,7 +27,6 @@ Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascri
     <li><a href="#notes">Notes</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#thanks">Thanks</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -36,7 +35,7 @@ Namerator is a graduation project prepared for the Kodluyoruz-Atölye15 javascri
 ## Notes
 
 This backend project created only api requests and web socket channel connections.
-Demo project deployed on http://namerator.fun you can get responses from your local project, http://namerator.fun/api routes (This is set defaul base url for [Nameretor Frontend](https://github.com/hdytarsn/namerator_frontend)).
+Demo project deployed on https://namerator.fun so you can get responses from your local with https://namerator.fun/api routes (default base url for [Nameretor Frontend](https://github.com/hdytarsn/namerator_frontend)).
 
 
 ## Built With
@@ -75,30 +74,20 @@ Demo project deployed on http://namerator.fun you can get responses from your lo
    ```
 4. Enter your web socket credentials
  ```sh
-    PUSHER_APP_ID=1111111
-    PUSHER_APP_KEY=123123123123
-    PUSHER_APP_SECRET=0a1230a12340
-    PUSHER_APP_CLUSTER=eu
-    -And Set BROADCAST_DRIVER=pusher
+    PUSHER_APP_ID=****
+    PUSHER_APP_KEY=****
+    PUSHER_APP_SECRET=****
+    PUSHER_APP_CLUSTER=****
+    BROADCAST_DRIVER=pusher
    ```
-   Atolye15 Project Keys&Ids Below (these will remove soon,added only for Alpcan Aydın)
    
-   ```sh
-   PUSHER_APP_ID=1179053
-    PUSHER_APP_KEY=8cf0e37a457627fb2630
-    PUSHER_APP_SECRET=0a146bb1a8f2b0fa36da
-    PUSHER_APP_CLUSTER=eu
-   ```
-   Pusher Email: atolye15@namerator.fun
-   Pusher Passwd: JS4Atolye15
-
 7. Migrate the database
     ```sh
    php artisan migrate
    ```
 
 ## Thanks!
-Special thanks to [Atölye15](https://www.atolye15.com) and [Kodluyoruz](https://www.kodluyoruz.org) 
+Special thanks to [Atölye15](https://www.atolye15.com) for evaluating the code and project idea, and [Kodluyoruz](https://www.kodluyoruz.org) for the best JavaScript bootcamp!
 
 ## Contact
 Hidayet Arasan - [Web Site](https://hidayetarasan.com) - info@hidayetarasan.com
